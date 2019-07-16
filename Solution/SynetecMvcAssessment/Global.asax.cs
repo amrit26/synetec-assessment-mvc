@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using InterviewTestTemplatev2.App_Start;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
@@ -13,6 +10,8 @@ namespace InterviewTestTemplatev2
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+
+            TypeRegistration.RegisterTypes();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
